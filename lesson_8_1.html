@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Position | Frontend Basics</title>
+  <meta charset="utf-8">
+  <meta content='NOINDEX, NOFOLLOW' name='robots'>
+  <meta name="description" content="Position |  Frontend Basic">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+  <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.min.css">
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body class="shower list">
+  <header class="caption">
+      <h1>Position | Frontend Basics</h1>
+      <p>Frontend Cheat Sheet</p>
+  </header>
+  <section class="slide slide--title">
+    <h2>Position</h2>
+  </section>
+  <section class="slide">
+    <h2>Agenda</h2>
+    <ol>
+      <li>CSS position</li>
+      <li>Positioning types and use cases</li>
+    </ol>
+  </section>
+  <section class="slide">
+    <h2>Position</h2>
+    <blockquote>
+      <p>
+        The <code>position</code> CSS property sets how an element is positioned in a document.
+      </p>
+    </blockquote>
+    <code style='font-size: 24px;'>position: static | relative | absolute | fixed | sticky</code>
+  </section>
+  <section class="slide">
+    <h2>Position</h2>
+    The
+    <code>top</code>,
+    <code>right</code>,
+    <code>bottom</code>,
+    and
+    <code>left</code>
+    properties determine the final location of positioned elements.
+  </section>
+  <section class="slide">
+    <h2>Static</h2>
+    The element is positioned according to the normal flow of the document.
+    The
+    <code>top</code>,
+    <code>right</code>,
+    <code>bottom</code>,
+    <code>left</code> and
+    <code>z-index</code>
+    properties have no effect.
+    This is the default value.
+  </section>
+  <section class="slide">
+    <h2>Relative</h2>
+    The element is positioned according to the normal flow of the document, and then offset relative
+    to itself based on the values of
+    <code>top</code>,
+    <code>right</code>,
+    <code>bottom</code>,
+    and
+    <code>left</code>.
+    The offset does not affect the
+    position of any other elements; thus, the space given for the element in the page layout
+    is the same as if position were static.
+  </section>
+  <section class="slide">
+    <h2>Absolute</h2>
+    The element is removed from the normal document flow, and no space is created for the element in the page layout.
+    It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the
+    initial containing block. Its final position is determined by the values of
+    <code>top</code>,
+    <code>right</code>,
+    <code>bottom</code>,
+    and
+    <code>left</code>.
+  </section>
+  <section class="slide">
+    <h2>Fixed</h2>
+    The element is removed from the normal document flow, and no space is created for the element in the page layout.
+    It is positioned relative to the initial containing block established by the viewport, except when one of its
+    ancestors has a transform, perspective, or filter property set to something other than none,
+    or the will-change property is set to transform, in which case that ancestor behaves as the containing block.
+    Its final position is determined by the values of top, right, bottom, and left.
+  </section>
+  <section class="slide">
+    <h2>Sticky</h2>
+    The element is positioned according to the normal flow of the document, and then offset relative to its nearest
+    scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements,
+    based on the values of
+    <code>top</code>,
+    <code>right</code>,
+    <code>bottom</code>,
+    and
+    <code>left</code>.
+    The offset does not affect the position of any other elements.
+  </section>
+  <section class="slide">
+    <h2>z-index</h2>
+    <figure>
+      <blockquote>
+        <p>
+          The z-index CSS property sets the z-order of a positioned element and its descendants or flex items.
+          Overlapping elements with a larger z-index cover those with a smaller one.
+        </p>
+      </blockquote>
+      <figcaption>
+        <a href="https://developer.mozilla.org/docs/Web/CSS/z-index" target="_blank">MDN</a>
+      </figcaption>
+    </figure>
+  </section>
+  <section class="slide">
+    <h2>Stacking context</h2>
+    <figure>
+      <blockquote>
+        <p>
+          The stacking context is a three-dimensional conceptualization of HTML elements along an
+          imaginary z-axis relative to the user, who is assumed to be facing the viewport or the webpage.
+          HTML elements occupy this space in priority order based on element attributes.
+        </p>
+      </blockquote>
+      <figcaption>
+        <a href="https://developer.mozilla.org/ru/docs/Web/CSS/z-index" target="_blank">MDN</a>
+      </figcaption>
+    </figure>
+  </section>
+  <footer class="badge">
+      <a href="/">Home</a>
+  </footer>
+  <div class="progress"></div>
+  <script src="shower/shower.js"></script>
+  <!-- &lt;&gt; -->
+</body>
+</html>
