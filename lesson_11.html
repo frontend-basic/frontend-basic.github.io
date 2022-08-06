@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Transition | Frontend Basics</title>
+  <meta charset="utf-8">
+  <meta content='NOINDEX, NOFOLLOW' name='robots'>
+  <meta name="description" content="Transition |  Frontend Basic">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+  <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="shower list">
+  <header class="caption">
+    <h1>Transition | Frontend Basics</h1>
+    <p>Frontend Cheat Sheet</p>
+  </header>
+  <section class="slide slide--title">
+    <h2>Transition</h2>
+  </section>
+  <section class="slide">
+    <h2>Agenda</h2>
+    <ol>
+      <li>CSS transition property.</li>
+      <li>Use cases.</li>
+    </ol>
+  </section>
+  <section class="slide">
+    <h2>Transition</h2>
+    CSS transitions allows you to change property values smoothly, over a given duration.
+  </section>
+  <section class="slide">
+    <h2>Example</h2>
+    <table>
+      <tr>
+        <td>
+          <pre>
+            <code>.button {</code>
+            <code>  <mark>transition: all 0.5s;</mark></code>
+            <code>}</code>
+            <code>.button:hover {</code>
+            <code>  color: white;</code>
+            <code>  background-color: navy;</code>
+            <code>}</code>
+          </pre>
+        </td>
+        <td>
+          <style>
+            .button {
+              padding: 15px 30px;
+              text-transform: uppercase;
+              border: none;
+              font-size: 42px;
+              cursor: pointer;
+              margin-left: 20px;
+              margin-bottom: 20px;
+              background-color: rgb(212, 212, 212);
+            }
+            .button-transition {
+              transition: all 0.3s;
+            }
+            .button:hover {
+              color: white;
+              background-color: navy;
+            }
+          </style>
+          <button class="button">button</button>
+          <button class="button button-transition">button</button>
+        </td>
+      </tr>
+    </table>
+  </section>
+  <section class="slide">
+    <h2>transition-property</h2>
+    The transition-property CSS property sets the CSS properties to which a transition effect should be applied.
+    <hr>
+    <pre>
+      <code>.transition {</code>
+      <code>  <mark>transition-property: color, background-color;</mark></code>
+      <code>}</code>
+    </pre>
+  </section>
+  <section class="slide">
+    <h2>transition-duration</h2>
+    The transition-duration CSS property sets the length of time a transition animation should take to complete.
+    By default, the value is 0s, meaning that no animation will occur.
+    <hr>
+    <pre>
+      <code>.transition {</code>
+      <code>  <mark>transition-duration: 0.5s;</mark></code>
+      <code>}</code>
+    </pre>
+  </section>
+  <section class="slide">
+    <h2>transition-timing-function</h2>
+    The transition-timing-function CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect.
+    <pre style="font-size: 22px;">
+      <code>.transition {</code>
+      <code>  <mark>transition-timing-function: linear | ease-in;</mark></code>
+      <code>  <mark>transition-timing-function: cubic-bezier(0,1.69,.93,-1.37);</mark></code>
+      <code>}</code>
+    </pre>
+    <a href="https://cubic-bezier.com/" target="_blank">https://cubic-bezier.com/</a>
+  </section>
+  <section class="slide">
+    <h2>transition-delay</h2>
+    The transition-delay CSS property specifies the duration to wait before starting a property's transition effect when its value changes.
+    <pre>
+      <code>.transition {</code>
+      <code>  <mark>transition-delay: 0.5s;</mark></code>
+      <code>}</code>
+    </pre>
+  </section>
+  <footer class="badge">
+      <a href="/">Home</a>
+  </footer>
+  <div class="progress"></div>
+  <script src="shower/shower.js"></script>
+  <!-- &lt;&gt; -->
+</body>
+</html>
